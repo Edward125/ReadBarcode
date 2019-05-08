@@ -3,3 +3,9 @@ E:\EdwardCode\ReadBarcode\ReadBarcode\bin\Debug\ReadBarcode.pdb
 E:\EdwardCode\ReadBarcode\ReadBarcode\bin\Debug\libzbar-cil.dll
 E:\EdwardCode\ReadBarcode\ReadBarcode\obj\Debug\ReadBarcode.exe
 E:\EdwardCode\ReadBarcode\ReadBarcode\obj\Debug\ReadBarcode.pdb
+\\psf\Home\EdwardCode\ReadBarcode\ReadBarcode\obj\Debug\ReadBarcode.exe
+\\psf\Home\EdwardCode\ReadBarcode\ReadBarcode\obj\Debug\ReadBarcode.pdb
+\\psf\Home\EdwardCode\ReadBarcode\ReadBarcode\bin\Debug\ReadBarcode.exe
+\\psf\Home\EdwardCode\ReadBarcode\ReadBarcode\bin\Debug\ReadBarcode.pdb
+\\psf\Home\EdwardCode\ReadBarcode\ReadBarcode\bin\Debug\libzbar-cil.dll
+\\psf\Home\EdwardCode\ReadBarcode\ReadBarcode\obj\Debug\ReadBarcode.csprojResolveAssemblyReference.cache

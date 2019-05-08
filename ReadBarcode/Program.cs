@@ -11,33 +11,23 @@ namespace ReadBarcode
     {
         static void Main(string[] args)
         {
-            while (true)
+            if (args.Length > 0)
             {
-                string s = Console.ReadLine();
-                if (s.ToLower() == "q")
-                    break;
+                if (File.Exists(args[0]))
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    ScanBarCode(args[0]);
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
                 else
                 {
-                    if (args.Length > 0)
-                    {
-                        if (File.Exists(args[0]))
-                        {
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            ScanBarCode(args[0]);
-                            Console.ForegroundColor = ConsoleColor.White;
-                        }
-                        else
-                        {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("File '{0}' is not exists.", args[0]);
-                            Console.ForegroundColor = ConsoleColor.White;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("File '{0}' is not exists.", args[0]);
+                    Console.ForegroundColor = ConsoleColor.White;
 
-                        }
-                    }
                 }
-
-               // Console.ReadLine();
             }
+               // Console.ReadLine();
         }
 
 
@@ -57,7 +47,7 @@ namespace ReadBarcode
                 scanner.SetConfiguration(ZBar.SymbolType.None, ZBar.Config.Enable, 0);
                 scanner.SetConfiguration(ZBar.SymbolType.CODE39, ZBar.Config.Enable, 1);
                 scanner.SetConfiguration(ZBar.SymbolType.CODE128, ZBar.Config.Enable, 1);
-
+                scanner.SetConfiguration(ZBar.SymbolType.QRCODE, ZBar.Config.Enable, 1);
                 List<ZBar.Symbol> symbols = new List<ZBar.Symbol>();
                 symbols = scanner.Scan((Image)pImg);
 
